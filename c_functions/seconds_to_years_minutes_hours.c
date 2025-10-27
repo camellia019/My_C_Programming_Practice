@@ -5,7 +5,7 @@ void convertSeconds(int totalSeconds)
 
   int hours = totalSeconds / 3600;        // hr = 3750/3600 = 1 r150
   int minutes = totalSeconds % 3600 / 60; // mins = 150/60 = 2 r30
-  int seconds = totalSeconds % 3600 % 60;
+  int seconds = totalSeconds % 3600 % 60; // 3750 % 3600 = 150; 150 % 60 = 30
 
   printf("%d hour, %d minutes, %d seconds", hours, minutes, seconds);
 }
