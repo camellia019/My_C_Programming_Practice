@@ -8,7 +8,7 @@ int getLCM(int num1, int num2)
         maximum = num1;
 
         for (int i = maximum;; i++)
-        { // i = 1; 1<= 20
+        {
 
             if (i % num1 == 0 && i % num2 == 0)
             {
@@ -19,13 +19,13 @@ int getLCM(int num1, int num2)
 
     else
     {
-        maximum = num2;
+        maximum = num2; // num2 = 20
 
         for (int i = maximum;; i++)
-        { // i = 1; 1<= 20
+        { // i = 20
 
             if (i % num1 == 0 && i % num2 == 0)
-            { // 10/2 = 5 (10 is not prime), 20/2 = 10 (20 is not prime)
+            { // 20/10 = 2r 0 & 20/20 = 1r 0
                 return lcm = i;
             }
         }
