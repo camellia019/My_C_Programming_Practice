@@ -12,8 +12,8 @@ int main()
 
     while (binaryNum > 0)
     {
-        binaryBits = binaryNum % 10;
-        decimalValue = decimalValue + binaryBits * pow(2, exponent);
+        binaryBits = binaryNum % 10; // 1/0/1/0
+        decimalValue = decimalValue + binaryBits * pow(2, exponent); // 0 + 0 x 2^0 = 0
         binaryNum /= 10;
         exponent++;
     }
